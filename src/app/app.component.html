@@ -1,1 +1,33 @@
-Hi this is pranav
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Electricity Bill Calculator
+    <br />
+    HI Your base amount is 7000
+    <br />
+    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+      reading1
+      <input type="text" name="reading1" value="reading1" ngModel />
+
+      <br />
+      reading2
+      <input type="text" name="reading2" value="reading2" ngModel />
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+
+    reading unit {{ diff }} <br />
+    reading amount = {{ diff }} * {{ mul }} = {{ readcal }}
+    <h4>Total Amount = {{ total }}</h4>
+
+    <br /><br />
+    this page is deployed with help of
+    https://efficientuser.com/tag/angular-hosting-for-free/
+  </body>
+</html>
